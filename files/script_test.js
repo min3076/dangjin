@@ -259,50 +259,30 @@ $(function() {
 
 
 
+
+
 $(function() {
-    var obj = $("#topkeyword");
-    var btn = $("#open_sc");
-    var close = obj.find(".close>a");
+    var obj = $("#menu-area");
+    var btn = $("#open_area");
 
 
-    function blurApple() {
-        var focusNow = document.activeElement;
-        if (focusNow.getAttribute('id') != lastFocus) {
-            clearInterval(checkFocusInterval);
+
+    btn.unbind().bind("click", function(event) {
+        if (obj.css("display") == "none") {
+            obj.slideToggle('fast');
+            obj.addClass("hiddenSearch");
+            btn.addClass("ov");
+        } else {
+            obj.slideUp('fast');
             obj.removeClass("hiddenSearch");
+            btn.removeClass("ov");
         }
-    }
 
-    function openTopkeyword(){
-        obj.slideDown('1000');
-        obj.addClass("hiddenSearch");
-        btn.addClass("ov");
-        $("#quickmenu").removeClass("hiddenSearch");
-    }
-
-    function closeTopkeyword(){
-        obj.slideUp('1000');
-        obj.removeClass("hiddenSearch");
-        btn.removeClass("ov");
-    }
-
-    btn.on("click touchend", function(event) {
-    	openTopkeyword();
         event.preventDefault();
         event.stopPropagation();
     });
 
-    close.on("click touchend", function(event) {
-        closeTopkeyword();
-        event.preventDefault();
-        event.stopPropagation();
-    });
-    $('#btn-favmenu').on("click", function() {
-        openTopkeyword();
-    })
 });
-
-
 
 
 $(function() {
