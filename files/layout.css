@@ -19,7 +19,7 @@
 #searchbox .search .search_box .input_box{position:relative;}
 #searchbox .search .search_box .input_box .search-input input[type="search"]{width:100%;height:30px;padding: 0;line-height:30px;font-size:14px;background-color:transparent;border:none;}
 #searchbox .search .search_box .input_box .search-input{position:relative;padding:0;border:none;background-color:#fff;}
-#searchbox .search .search_box .input_box .search-input label{position: absolute;width: 1px;height: 1px; margin: 0;padding: 0;background: none;font-size: 0;color: transparent;line-height: 0;}
+/* #searchbox .search .search_box .input_box .search-input label{position: absolute;width: 1px;height: 1px; margin: 0;padding: 0;background: none;font-size: 0;color: transparent;line-height: 0;} */
 #searchbox .search .search_box input[type="submit"]{position:absolute;top:0;right:0;width:25px;height:26px;z-index: 999999;background:url(/images/kor/new_common/search_submit.png) no-repeat 50% 50%;font-size:0;line-height:0;border:none;}
 
 
@@ -668,8 +668,8 @@ border-radius: 50px;background-color: #FFF;font-size: 0;transition:all ease-out 
 #searchbox.mobile .search .search_box{z-index: 10000;position:relative;background-color:#fff;}
 #searchbox.mobile .search .search_box .input_box{position:relative;}
 #searchbox.mobile .search .search_box .input_box .search-input{position:relative;padding:0;border:none;background-color:#fff;}
-#searchbox.mobile .search .search_box .input_box .search-input label {width: 1px; height: 1px; font-weight: 500; font-size: 3px; margin-right: -100%;
-    color: transparent; text-align: left; line-height: 30px; padding: 0; margin: 0; display: inline-block; float: left;}
+/* #searchbox.mobile .search .search_box .input_box .search-input label {width: 1px; height: 1px; font-weight: 500; font-size: 3px; margin-right: -100%;
+    color: transparent; text-align: left; line-height: 30px; padding: 0; margin: 0; display: inline-block; float: left;} */
 #searchbox.mobile .search .search_box .input_box .search-input input[type="search"]{width:100%;height:30px;padding: 0;line-height:30px;font-size:14px;background-color:transparent;border:none;}
 
 /*#searchbox.mobile .search .search_box .input_box .search-input label{position: absolute;width: 1px;height: 1px; margin: 0;padding: 0;background: none;font-size: 3px;color: transparent;line-height: 0;}*/
