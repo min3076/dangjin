@@ -674,7 +674,7 @@ border-radius: 50px;background-color: #FFF;font-size: 0;transition:all ease-out 
 
 /*#searchbox.mobile .search .search_box .input_box .search-input label{position: absolute;width: 1px;height: 1px; margin: 0;padding: 0;background: none;font-size: 3px;color: transparent;line-height: 0;}*/
 
-#searchbox.mobile .search .search_box input[type="submit"]{position:absolute;top:0;right:0;width:25px;height:26px;z-index: 999999;background:url(/images/kor/new_common/search_submit.png) no-repeat 50% 50%;font-size:0;line-height:0;border:none;}
+#searchbox.mobile .search .search_box input[type="submit"]{position:absolute;top:0;right:0;width:25px;height:26px;z-index: 999999;background:blue url(/images/kor/new_common/search_submit.png) no-repeat 50% 50%;font-size:0;line-height:0;border:none;}
 
 
 /* 날씨 */
