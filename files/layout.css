@@ -663,7 +663,7 @@ div #summary4{background: url(/images/kor/common/summary_bg4.png) no-repeat left
 /* 검색 */
 #searchbox.mobile {position: relative;text-align:left;display:none;border-top: 1px solid #ececec;padding-right: 30%;}
 #searchbox.mobile  a{}
-#searchbox.mobile .search{display: inline-block;width:85%;margin:10px 20px;padding: 0 20px;border: #1c3e61 solid 2px;
+#searchbox.mobile .search{display: inline-block;width:85%;margin:10px 20px;padding:0;border: #1c3e61 solid 2px;
 border-radius: 50px;background-color: #FFF;font-size: 0;transition:all ease-out 0.1s;-webkit-transition:all ease-out 0.1s;-moz-transition:all ease-out 0.1s;-ms-transition:all ease-out 0.1s;}
 #searchbox.mobile .search .search_box{z-index: 10000;position:relative;background-color:#fff;}
 #searchbox.mobile .search .search_box .input_box{position:relative;}
@@ -673,7 +673,7 @@ border-radius: 50px;background-color: #FFF;font-size: 0;transition:all ease-out 
 #searchbox.mobile .search .search_box .input_box .search-input input[type="search"]{width:100%;height:30px;padding: 0;line-height:30px;font-size:14px;background-color:transparent;border:none;} */
 
 /*#searchbox.mobile .search .search_box .input_box .search-input label{position: absolute;width: 1px;height: 1px; margin: 0;padding: 0;background: none;font-size: 3px;color: transparent;line-height: 0;}*/
-
+#searchbox.mobile .search .search_box .input_box .search-input input[type="search"]{padding: 0 20px}
 #searchbox.mobile .search .search_box input[type="submit"]{position:absolute;top:0;right:0;width:25px;height:26px;z-index: 999999;background:blue url(/images/kor/new_common/search_submit.png) no-repeat 50% 50%;font-size:0;line-height:0;border:none;}
 
 
