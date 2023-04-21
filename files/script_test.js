@@ -217,58 +217,6 @@ function linklst() {
 
 
 
-/* 모바일에서 정상적인 테이블 뷰가 가능하도록 */
-function responseTable() {
-    if ($(".responseTable").size() === 0) return false;
-
-    if (location.href.match("BBSMSTR")) return false;
-    if (location.href.match("prog")) return false;
-
-    if (return_width() < 768) {
-        var param = $(".tbl_basic, .basic_table");
-        //alert('aa');
-
-        $.each(param, function() {
-            if ($(this).parent().parent().attr("class") != "responseTable") {
-                $(this).wrap("<div style='position:relative' class='responseTable'></div>");
-                $(this).wrap("<div style='width:100%;min-width:730px' class='table_scroll_x'></div>");
-            }
-
-            $(this).parent().parent().height($(this).outerHeight() + 20);
-            $(window).resize(function(event) {
-                $(this).parent().parent().height($(this).outerHeight() + 20);
-                event.stopPropagation();
-            });
-
-        });
-
-        fleXenv.initByClass("responseTable");
-
-
-        var startX, startY;
-
-        function getCoord(e, c) {
-            return /touch/.test(e.type) ? (e.originalEvent || e).changedTouches[0]['page' + c] : e['page' + c];
-        }
-
-        $(".responseTable").on('touchstart', function(event) {
-            startX = getCoord(event, 'X');
-            startY = getCoord(event, 'Y');
-        }).on('touchend', function(event) {
-            if (Math.abs(getCoord(event, 'X') - startX) < 20 && Math.abs(getCoord(event, 'Y') - startY) < 20) {
-                $(window).stop(true, false).animate({ top: startY }, 0);
-                //event.preventDefault();
-            }
-        });
-    }
-}
-
-
-$(document).ready(function() {
-    responseTable();
-});
-
-
 function footersitelink(param,btn,obj){
     var param = $(param);
     var btn = param.find(btn);
