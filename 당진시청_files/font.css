@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "nsr";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/css/font/nanum_square_r.eot");
+  src: url("/css/font/nanum_square_r.eot?#iefix") format("embedded-opentype"), url("/css/font/nanum_square_r.woff") format("woff");
+}
+@font-face {
+  font-family: "nsr";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/css/font/nanum_square_b.eot");
+  src: url("/css/font/nanum_square_b.eot?#iefix") format("embedded-opentype"), url("/css/font/nanum_square_b.woff") format("woff");
+}
+@font-face {
+  font-family: "ntk";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/css/font/notokr-demilight.eot");
+  src: url("/css/font/notokr-demilight.eot?#iefix") format("embedded-opentype"), url("/css/font/notokr-demilight.woff2") format("woff2"), url("/css/font/notokr-demilight.woff") format("woff");
+}
+@font-face {
+  font-family: "ntk";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/css/font/notokr-regular.eot");
+  src: url("/css/font/notokr-regular.eot?#iefix") format("embedded-opentype"), url("/css/font/notokr-regular.woff2") format("woff2"), url("/css/font/notokr-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ntk";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/css/font/notokr-bold.eot");
+  src: url("/css/font/notokr-bold.eot?#iefix") format("embedded-opentype"), url("/css/font/notokr-bold.woff2") format("woff2"), url("/css/font/notokr-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BRBA";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/css/font/BRBA.eot");
+  src: url("/css/font/BRBA.eot?#iefix") format("embedded-opentype"), url("/css/font/BRBA.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BRR";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/css/font/BRR.eot");
+  src: url("/css/font/BRR.eot?#iefix") format("embedded-opentype"), url("/css/font/BRR.woff") format("woff");
+}
