@@ -663,7 +663,7 @@ div #summary4{background: url(/images/kor/common/summary_bg4.png) no-repeat left
 /* 검색 */
 #searchbox.mobile {position: relative;text-align:left;display:none;border-top: 1px solid #ececec;padding-right: 30%;}
 #searchbox.mobile  a{}
-#searchbox.mobile .search{display: inline-block;width:85%;margin:10px 20px;padding: 10px 22px 10px 20px;border: #1c3e61 solid 2px;
+#searchbox.mobile .search{display: inline-block;width:85%;margin:10px 20px;padding: 0 20px;border: #1c3e61 solid 2px;
 border-radius: 50px;background-color: #FFF;font-size: 0;transition:all ease-out 0.1s;-webkit-transition:all ease-out 0.1s;-moz-transition:all ease-out 0.1s;-ms-transition:all ease-out 0.1s;}
 #searchbox.mobile .search .search_box{z-index: 10000;position:relative;background-color:#fff;}
 #searchbox.mobile .search .search_box .input_box{position:relative;}
