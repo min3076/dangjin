@@ -42,33 +42,6 @@ $(function() {
 });
 
 
-/* flow label */
-$(document).ready(function() {
-    if (!$("label").is(".flow")) return false;
-
-    var o1 = $("label.flow");
-    var o2 = $("label.flow").next();
-
-    o1.css({ "position": "absolute" });
-
-    o1.bind("click focusin", function() {
-        $(this).css({ "visibility": "hidden" });
-    });
-    o2.bind("click focusin", function() {
-        $(this).prev().css({ "visibility": "hidden" });
-    });
-
-    o2.bind("focusout", function() {
-        if ($(this).val() == "") {
-            $(this).prev().css({ "visibility": "visible" });
-        }
-    });
-
-    if (o2.val() != "") { o1.css({ "visibility": "hidden" }); }
-
-
-
-});
 
 
 /* OS 체크 불린값 전달 window 폰, window 기반 태블릿pc 에서 테스트가 필요함 */
