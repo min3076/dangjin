@@ -260,6 +260,52 @@ $(function() {
 
 
 $(function() {
+    var obj = $("#topkeyword");
+    var btn = $("#open_sc");
+    var close = obj.find(".close>a");
+
+
+    function blurApple() {
+        var focusNow = document.activeElement;
+        if (focusNow.getAttribute('id') != lastFocus) {
+            clearInterval(checkFocusInterval);
+            obj.removeClass("hiddenSearch");
+        }
+    }
+
+    function openTopkeyword(){
+        obj.slideDown('1000');
+        obj.addClass("hiddenSearch");
+        btn.addClass("ov");
+        $("#quickmenu").removeClass("hiddenSearch");
+    }
+
+    function closeTopkeyword(){
+        obj.slideUp('1000');
+        obj.removeClass("hiddenSearch");
+        btn.removeClass("ov");
+    }
+
+    btn.on("click touchend", function(event) {
+    	openTopkeyword();
+        event.preventDefault();
+        event.stopPropagation();
+    });
+
+    close.on("click touchend", function(event) {
+        closeTopkeyword();
+        event.preventDefault();
+        event.stopPropagation();
+    });
+    $('#btn-favmenu').on("click", function() {
+        openTopkeyword();
+    })
+});
+
+
+
+
+$(function() {
 
     linklst();
 });
